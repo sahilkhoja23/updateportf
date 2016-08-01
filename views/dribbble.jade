@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title
+    script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='https://npmcdn.com/basscss@8.0.1/css/basscss.min.css', rel='stylesheet')
+  body
+    div.max-width-12
+      ul#dribbble
+  script(type='text/javascript').
+    $(function() {
+    $.getJSON('https://api.dribbble.com/v1/users/sahkho/shots?access_token=94685ca7fffcde8bf4bd51203a3033f959ddda2f5775bd18e3ed4565ad01bd22&callback=?', function(resp) {
+    if (resp.data.length > 0) {
+    $.each(resp.data.reverse(), function(i, val) {
+    $('#dribbble').prepend(
+    '<a id="linktoimage" target="blank" href=" '+val.html_url+' "<ul><img id="imgs" class="col col-4 .sm-col.sm-col-6 fit" src="'+val.images.hidpi+'" /></ul></a>'
+    )
+    });
+    }
+    else {
+    $('#dribbble').append('<li>No shots.</li>');
+    }
+    });
+    });

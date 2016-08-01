@@ -1,0 +1,30 @@
+include layout.jade
+
+block header
+	div.header.fix
+		h1 Sahil Khoja
+		h2 student at Cornell, designer at x.
+		block social
+		div.clearfix.socialIcons
+			a(href="http://dribbble.com/sahkho" target="blank")
+				i.fa.fa-dribbble(aria-hidden='true' class="fit")
+			a(href="http://medium.com/@sahkho" target="blank")
+				i.fa.fa-medium(aria-hidden='true')
+			a(href="http://twitter.com/@sahkho" target="blank")
+				i.fa.fa-twitter(aria-hidden='true')
+			a(href="https://www.linkedin.com/in/sahilkhoja" target="blank")
+				i.fa.fa-linkedin(aria-hidden='true')
+		div.actionList.clearfix
+			div.one
+				a(href="work")
+					h3 work
+			div.two
+				a(href="about")
+					h3 about
+			div.three
+				a(href="resume.pdf")
+					h3 resume
+block content 
+	include dribbble.jade
+	
+

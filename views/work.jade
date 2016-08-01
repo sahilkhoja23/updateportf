@@ -1,0 +1,75 @@
+include layout.jade
+script.
+	function passWord() {
+	var testV = 1;
+	var pass1 = prompt('Please Enter Your Password',' ');
+	while (testV < 3) {
+	if (!pass1) 
+	history.go(-1);
+	if (pass1.toLowerCase() == "intuit123") {
+	window.open('intuit');
+	break;
+	} 
+	testV+=1;
+	var pass1 = 
+	prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+	}
+	if (pass1.toLowerCase()!="password" & testV ==3) 
+	history.go(-1);
+	return " ";
+	} 
+
+
+
+
+block header
+	nav.clearfix
+		.sm-col
+			a.btn.py2(href='/')
+				h3 home
+		.sm-col-right
+			a.btn.py2(href="resume.pdf")
+				h3 resume
+
+block content
+	h1 Work
+
+	br
+
+	div.clearfix.mx-auto
+		div.sm-col.sm-col-6.md-col-4
+			a(onclick="passWord()")
+				img(class="fit mx-auto" src="/images/intuit.png")
+		div.sm-col.sm-col-6.md-col-6.overflow-scroll.px3
+			h2 Intuit 
+			h3.descript 
+				|Experience Design Intern 2016 - Discovered mobile use cases for accountants using Intuit Tax Online. Presented findings to the VP of Intuit ProConnect and Senior Leadership Team. To see this work, please 
+				a(href="mailto:sk938@cornell.edu") contact
+				|  me directly.
+	br
+	a(href="uber")
+		div.clearfix.mx-auto
+			div.sm-col.sm-col-6.md-col-4
+				img(class="fit" src="/images/uber.png")
+			div.sm-col.sm-col-6.md-col-6.overflow-scroll.px3
+				h2 Uber
+				h3.descript Took 24 Ubers throughout East Asia to speak with driver’s about their usability issues in an international environment. Received attention from Head of International UX Research, Southeast Asia Design Team, and Lead Experience Designers at Uber.
+
+	br
+	a(href="function")
+		div.clearfix.mx-auto		
+			div.sm-col.sm-col-6.md-col-4
+				img(class="fit" src="/images/functionofpinki.jpg")
+			div.sm-col.sm-col-6.md-col-6.overflow-scroll.px3
+				h2 Function of Beauty
+				h3.descript Designed a digital hairlab to clarify product offerings to this Y-Combinator backed startup. Work was displayed at YC W16 Demo Day.
+
+	br
+	a(href="dangle")
+		div.clearfix.mx-auto
+		div.sm-col.sm-col-6.md-col-4
+			img(class="fit" src="/images/dangle.png")
+		div.sm-col.sm-col-6.md-col-6.overflow-scroll.px3
+			h2 Dangle
+			h3.descript Wireframed and prototyped iOS Application using tools such as Framer.js and Invision. Developed sign-up campaign in order to begin a beta testing round. Work was shipped on the v1 of the product, now available on the app store.
+

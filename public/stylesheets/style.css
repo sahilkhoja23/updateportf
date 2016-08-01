@@ -1,0 +1,134 @@
+body {
+  padding: 50px;
+}
+
+@font-face {
+    font-family: 'sol';
+    src: url(/stylesheets/Soleil-Light.ttf);
+}
+@font-face {
+    font-family: 'pn-light';
+    src: url(/stylesheets/ProximaNova-Light.ttf);
+}
+@font-face {
+    font-family: 'pn-reg';
+    src: url(/stylesheets/ProximaNova-Reg.ttf);
+}
+@font-face {
+    font-family: 'caslon pro';
+    src: url(/stylesheets/caslon.ttf);
+}
+
+
+@media (max-width: 768px) {
+h1 {font-size:1em}
+h2 {font-size:0.5em}
+h3 {font-size: 0.5em}
+p {font-size: 0.5em !important}
+.invpt {transform: scale(0.3)}
+}
+
+
+
+h1 {
+	font-family: 'Andale Mono';
+	color: #003366;
+	text-transform: uppercase;
+} 
+
+h2 {
+	font-family: 'Andale Mono';
+	opacity: 0.5;
+}
+
+h3 {
+	font-family: 'Andale Mono'
+}
+
+p, li p {
+	font-family: 'pn-light';
+	color: #000;
+	font-size: 1.2em;
+
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {color: #3BABFF;}
+
+.black {
+	color: black !important;
+}
+
+/*go to top button*/
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+#alldrib {
+	display: inline;
+	list-style-type: none;
+}
+
+
+
+#imgs {
+	padding: 1em;
+}
+
+
+.header {
+	width: 100%;
+	text-align: center;
+	padding-top: 2em;
+}
+
+.actionList div {
+	display: inline-block;
+	text-align: center;
+	widows: 100%;
+	padding: 1em;
+}
+
+.socialIcons a {
+	display: inline-block;
+	text-align: center;
+	widows: 100%;
+	padding: 1em;
+}
+
+.quickjump a {
+	display: inline-block;
+	text-align: center;
+	padding-right: 1em;
+}
+
+.descript {
+	font-family: 'Andale Mono';
+	opacity: 1;
+	line-height: 150%;
+}
+
+.portf {
+	font-size: 1.5em;
+}
+p {
+	line-height: 150%;
+}
+
