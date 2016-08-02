@@ -15,11 +15,13 @@ body {
 
 
 @media (max-width: 768px) {
-h1 {font-size:2em}
-h2 {font-size:0.75em}
-h3 {font-size: 0.5em}
+h1 {font-size:2em; letter-spacing: 0.5px}
+h2 {font-size:0.75em; letter-spacing: 0.5px}
+h3 {font-size: 0.5em; letter-spacing: 0.5px}
 p {font-size: 0.5em !important}
+li {font-size: 0.5em !important}
 .invpt {transform: scale(0.3)}
+.pl3 {padding-left: 0rem !important}
 body {padding: 0px;}
 .dribbble {padding-right: 2em;}
 }
