@@ -3,21 +3,15 @@ body {
 }
 
 @font-face {
-    font-family: 'sol';
-    src: url(/stylesheets/Soleil-Light.ttf);
+    font-family: 'Andale Mono';
+    src: url(/stylesheets/Andale-Mono.ttf);
 }
+@font-
 @font-face {
     font-family: 'pn-light';
     src: url(/stylesheets/ProximaNova-Light.ttf);
 }
-@font-face {
-    font-family: 'pn-reg';
-    src: url(/stylesheets/ProximaNova-Reg.ttf);
-}
-@font-face {
-    font-family: 'caslon pro';
-    src: url(/stylesheets/caslon.ttf);
-}
+
 
 
 @media (max-width: 768px) {
