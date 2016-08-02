@@ -6,7 +6,7 @@ body {
     font-family: 'Andale Mono';
     src: url(/stylesheets/Andale-Mono.ttf);
 }
-@font-
+
 @font-face {
     font-family: 'pn-light';
     src: url(/stylesheets/ProximaNova-Light.ttf);
@@ -15,8 +15,8 @@ body {
 
 
 @media (max-width: 768px) {
-h1 {font-size:1em}
-h2 {font-size:0.5em}
+h1 {font-size:2em}
+h2 {font-size:0.75em}
 h3 {font-size: 0.5em}
 p {font-size: 0.5em !important}
 .invpt {transform: scale(0.3)}
