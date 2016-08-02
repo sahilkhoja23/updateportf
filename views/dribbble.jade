@@ -8,7 +8,7 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(href='https://npmcdn.com/basscss@8.0.1/css/basscss.min.css', rel='stylesheet')
   body
-    div.max-width-12
+    div.max-width-12.dribbble
       ul#dribbble
   script(type='text/javascript').
     $(function() {
@@ -16,7 +16,7 @@ html
     if (resp.data.length > 0) {
     $.each(resp.data.reverse(), function(i, val) {
     $('#dribbble').prepend(
-    '<a id="linktoimage" target="blank" href=" '+val.html_url+' "<ul><img id="imgs" class="col col-4 .sm-col.sm-col-6 fit" src="'+val.images.hidpi+'" /></ul></a>'
+    '<a id="linktoimage" target="blank" href=" '+val.html_url+' "<ul><img id="imgs" class="col col-6 .sm-col.sm-col-6 fit" src="'+val.images.hidpi+'" /></ul></a>'
     )
     });
     }

@@ -26,6 +26,8 @@ h2 {font-size:0.5em}
 h3 {font-size: 0.5em}
 p {font-size: 0.5em !important}
 .invpt {transform: scale(0.3)}
+body {padding: 0px;}
+.dribbble {padding-right: 2em;}
 }
 
 
