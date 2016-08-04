@@ -5,156 +5,147 @@ include portflayout.jade
 
 	
 block content
-div.sm-col.sm-col-9.md-col-9.overflow-hidden.pl3
-	h1 Intuit
-	br
-	#overview
-		h2.descript OVERVIEW
-		p Accountants are becoming busier and busier, with handling a client's docuements in one place to making sure that another client's return has been processed and accepted (all while trying to expand their practice). How do we harness all the screens that already dominate an accountants daily life to make their job easier, deliver actionable value in under three seconds, and reduce friction with our platform? As an experience design intern, I researched and discovered mobile insights for Intuit, and used these insights to create robust mobile prototypes for the Intuit Tax Online product.
+.clearfix(style="padding-left:16rem")
+	.sm-col.sm-col-9.md-col-9.overflow-hidden.block
+		h1 Intuit
 		br
-	#goal
-		h2.descript GOAL
-		p Discover the best cross device use cases for accountants and validate these use cases through rapid prototyping.
-		br
-	#problemstatement
-		h2.descript PROBLEM STATEMENT
-		p I am a 
-			b small business accountant
-		P I am trying to balance 
-			b client 
-			| and 
-			b practice management
-		p But I'm 
-			b flying blind
-		p Because the tools and information 
-			b are not easy 
-			| to access
-		p Which makes me feel 
-			b behind, uncertain, and trapped.
-		br
-	#discover
-		h2.descript DISCOVER	
-		hr
-		br
-		
-		h2.descript Who
-		p Meet Andrew Bison, CPA. Currently this is how his day goes:
-		img(class="block mx-auto" style="width: 100%" src="/images/intu_currentflow.png")
-		p Andrew, usually wakes up with some notifications. He checks these while he's making his coffee before heading to work. At work, he uses his Dell Monitor to manage clients, find ways to grow his practice, and constantly check his email for updates. On his way out of the office, Andrew completes some digital chores before heading home for dinner. He checks Facebook, Twitter, and of course Email right before hitting the sack.
-		p Now, knowing how Andrew uses the technology around him, how can we design the most magical cross-device experience for him?
-		br
+		#overview
+			h2.descript OVERVIEW
+			p Accountants are becoming busier and busier, with handling a client's docuements in one place to making sure that another client's return has been processed and accepted (all while trying to expand their practice). How do we harness all the screens that already dominate an accountants daily life to make their job easier, deliver actionable value in under three seconds, and reduce friction with our platform? As an experience design intern, I researched and discovered mobile insights for Intuit, and used these insights to create robust mobile prototypes for the Intuit Tax Online product.
+			br
+		#goal
+			h2.descript GOAL
+			p Discover the best cross device use cases for accountants and validate these use cases through rapid prototyping.
+			br
+		#problemstatement
+			h2.descript PROBLEM STATEMENT
+			p I am a 
+				b small business accountant
+			P I am trying to balance 
+				b client 
+				| and 
+				b practice management
+			p But I'm 
+				b flying blind
+			p Because the tools and information 
+				b are not easy 
+				| to access
+			p Which makes me feel 
+				b behind, uncertain, and trapped.
+			br
+		#discover
+			h2.descript DISCOVER	
+			hr
+			br
+			
+			h2.descript Who
+			p Meet Andrew Bison, CPA. Currently this is how his day goes:
+			img(class="block mx-auto" style="width: 100%" src="/images/intu_currentflow.png")
+			p Andrew, usually wakes up with some notifications. He checks these while he's making his coffee before heading to work. At work, he uses his Dell Monitor to manage clients, find ways to grow his practice, and constantly check his email for updates. On his way out of the office, Andrew completes some digital chores before heading home for dinner. He checks Facebook, Twitter, and of course Email right before hitting the sack.
+			p Now, knowing how Andrew uses the technology around him, how can we design the most magical cross-device experience for him?
+			br
 
-		h2.descript Ideas
-		p After carefully examining the Intuit Tax Online (ITO) Platform, I made a graph of ideas with everything ITO can currently do (that we aren't doing) and everything that ITO could potentially do. This graph allowed me to figure out the riskiest (and potentially the most magical) ideas.
-		br
-		img(style="width: 50%; auto: 30%" class="block mx-auto fit" src="/images/intu_graph.jpg")
-		img(style="width: 50%; auto: 30%" class="block mx-auto fit" src="/images/intu_zoomgraph.png")
-		br
-		br
+			h2.descript Ideas
+			p After carefully examining the Intuit Tax Online (ITO) Platform, I made a graph of ideas with everything ITO can currently do (that we aren't doing) and everything that ITO could potentially do. This graph allowed me to figure out the riskiest (and potentially the most magical) ideas.
+			br
+			img(style="width: 50%; auto: 30%" class="block mx-auto fit" src="/images/intu_graph.jpg")
+			img(style="width: 50%; auto: 30%" class="block mx-auto fit" src="/images/intu_zoomgraph.png")
+			br
+			br
 
 
-		h2.descript Stack-Rank Testing
-		p I now had all these ideas graphed out, but how was I supposed to figure out which ones would be the most valuable to accountants? Time to test. I converted all these ideas into use cases, and laid out each use case in two piles: green cards and orange cards. 
-		p Green - everything ITO can do right now. Orange - everything ITO can potentially do. 
-		p After conducting this excercise with 5 accountants, I had a clear idea of how an accountant's priorities shifted throughout the year, and how this shift would impact the product I planned to create.
-		br
-		img(style="width: 50%; auto: 50%" class="block mx-auto fit" src="/images/intu_stackrank.png")
-		img(style="width: 50%; auto: 50%" class="block mx-auto fit" src="/images/intu_top5.png")
-		br
+			h2.descript Stack-Rank Testing
+			p I now had all these ideas graphed out, but how was I supposed to figure out which ones would be the most valuable to accountants? Time to test. I converted all these ideas into use cases, and laid out each use case in two piles: green cards and orange cards. 
+			p Green - everything ITO can do right now. Orange - everything ITO can potentially do. 
+			p After conducting this excercise with 5 accountants, I had a clear idea of how an accountant's priorities shifted throughout the year, and how this shift would impact the product I planned to create.
+			br
+			img(style="width: 50%; auto: 50%" class="block mx-auto fit" src="/images/intu_stackrank.png")
+			img(style="width: 50%; auto: 50%" class="block mx-auto fit" src="/images/intu_top5.png")
+			br
 
-		h2.descript Analogs
-		p With the right priorties in place, I began to examine analogs of successful mobile applications that aligned with my findings: strong notification system, low friction, batch action requests, and more:
-		img(class="block mx-auto fit" src="/images/intu_analogs.png")
-		br
-	#define
-		h2.descript DEFINE
-		hr
-		br
+			h2.descript Analogs
+			p With the right priorties in place, I began to examine analogs of successful mobile applications that aligned with my findings: strong notification system, low friction, batch action requests, and more:
+			img(class="block mx-auto fit" src="/images/intu_analogs.png")
+			br
+		#define
+			h2.descript DEFINE
+			hr
+			br
 
-		h2.descript Developing Use-Cases
-		p With the initial research completed, its now time to develop a cross-device use case that could mold itself into the analogs we've been thinking about. Sara (Senior Interaction Designer) and I starting brainstorming a substantial use case that we could test using a low-fi prototype:
-		img(style="width: 60%; auto: 30%" class="block mx-auto fit" src="/images/intu_usecasewhite.png")
-		br
+			h2.descript Developing Use-Cases
+			p With the initial research completed, its now time to develop a cross-device use case that could mold itself into the analogs we've been thinking about. Sara (Senior Interaction Designer) and I starting brainstorming a substantial use case that we could test using a low-fi prototype:
+			img(style="width: 60%; auto: 30%" class="block mx-auto fit" src="/images/intu_usecasewhite.png")
+			br
 
-		h2.descript Use Case Map
-		p Sara and I decided to go with a use case that described an accountant received a W2 from a client with an unexplained discrepency (something that occurs often during tax season). Here's how we mapped out the use case across devices, with an empathy line.
-		img(class="block mx-auto fit" src="/images/intu_UseCasemap.png")
-		p The empathy line helped us figure out where both parties had low emotions and find a way to turn the tables and make this low point into a high, magical one.
-		br
-	#design
-		h2.descript DESIGN
-		hr
-		br
+			h2.descript Use Case Map
+			p Sara and I decided to go with a use case that described an accountant received a W2 from a client with an unexplained discrepency (something that occurs often during tax season). Here's how we mapped out the use case across devices, with an empathy line.
+			img(class="block mx-auto fit" src="/images/intu_UseCasemap.png")
+			p The empathy line helped us figure out where both parties had low emotions and find a way to turn the tables and make this low point into a high, magical one.
+			br
+		#design
+			h2.descript DESIGN
+			hr
+			br
 
-		h2.descript Low-Fidelity Testing
-		div.clearfix
-			div.sm-col.sm-col-5.md-col-5.px4
-				video(controls muted class="fit" height: auto autoplay  audio="false" src="/images/in.mov") 
-			div.sm-col.sm-col-7.md-col-7.overflow-scroll
-				p We met with Jolie, an accountant with just three clients. Jolie is looking to expand her practice. She attends networking events, checks up with clients if they need any additional work, and posts on platforms like Craigslist. Jolie also constantly checks up on her clients' progress, as missing documents can be a huge headache. After playing with this low-fi prototype, she said that the another way she wants to be more engaged with her clients throughout the year (rather than just during tax season) is by sharing news from AccountantsToday, LinkedIn, or Twitter. At the end of the test, Jolie asked "Is that app already out yet? I really need something like that."
-				p Jolie's feedback, along with a couple of additional accountants, validated our hypothesis and it was time to move to a higher fidelity. 
-		
+			h2.descript Low-Fidelity Testing
+			div.clearfix
+				div.sm-col.sm-col-5.md-col-5.px4
+					video(controls muted class="fit" height: auto autoplay  audio="false" src="/images/in.mov") 
+				div.sm-col.sm-col-7.md-col-7.overflow-scroll
+					p We met with Jolie, an accountant with just three clients. Jolie is looking to expand her practice. She attends networking events, checks up with clients if they need any additional work, and posts on platforms like Craigslist. Jolie also constantly checks up on her clients' progress, as missing documents can be a huge headache. After playing with this low-fi prototype, she said that the another way she wants to be more engaged with her clients throughout the year (rather than just during tax season) is by sharing news from AccountantsToday, LinkedIn, or Twitter. At the end of the test, Jolie asked "Is that app already out yet? I really need something like that."
+					p Jolie's feedback, along with a couple of additional accountants, validated our hypothesis and it was time to move to a higher fidelity. 
+			
 
-		h2.descript Exploring a Higher Fidelity: Native Application vs Bots
-		p With these insights, I began thinking about how a lot of the functionality that we were trying to implement could be achieved by a conversational bot. The beauty of a chat-bot is that it's proactive rather than reactive. But how would accountants react to this paradigm, as acccountants are usually the ones in control? Only one way to find out: Test it.
-		h3 Conversational Inspirations
-		div.clearfix
-				div.sm-col.sm-col-4.md-col-4.p2
-					img(class="fit" src="/images/intu_quartz.PNG")
+			h2.descript Exploring a Higher Fidelity: Native Application vs Bots
+			p With these insights, I began thinking about how a lot of the functionality that we were trying to implement could be achieved by a conversational bot. The beauty of a chat-bot is that it's proactive rather than reactive. But how would accountants react to this paradigm, as acccountants are usually the ones in control? Only one way to find out: Test it.
+			h3 Conversational Inspirations
+			div.clearfix
+					div.sm-col.sm-col-4.md-col-4.p2
+						img(class="fit" src="/images/intu_quartz.PNG")
+					div.sm-col.sm-col-4.md-col-4
+						img(class="fit" src="/images/intu_nba.PNG")
+
+
+			h3 Sketching Scenarios
+			div.clearfix
 				div.sm-col.sm-col-4.md-col-4
-					img(class="fit" src="/images/intu_nba.PNG")
+					h3 Meeting a New Client
+					img(class="fit" src="/images/intu_meetnewclient.png")
+				div.sm-col.sm-col-4.md-col-4
+					h3 Completed Return Notification
+					img(class="fit" src="/images/intu_completereturn.png")
+				div.sm-col.sm-col-4.md-col-4
+					h3 Growing Client Base
+					img(class="fit" src="/images/intu_growclientbase.png")
 
+			h3 Bot Design vs Native Application Flow
+			div.clearfix
+					div.sm-col.sm-col-6.md-col-6
+						img(class="fit" src="/images/intu_botdesign.png")
+					div.sm-col.sm-col-6.md-col-6
+						img(class="fit" src="/images/intu_flow.png")
+		#deliver
+			h2.descript DELIVER
+			hr
+			br
+			h2.descript ChatBot
+		div.clearfix.sm-col.sm-col-12.md-col-12
+			div.sm-col.sm-col-3.md-col-3
+				h3 Add Client
+					video(controls muted class="fit" height: auto   audio="false" src="/images/intu_addclient.mov")
+			div.sm-col.sm-col-3.md-col-3						
+				h3 Grow Client Base
+					video(controls muted class="fit" height: auto   audio="false" src="/images/intu_growclientbase.mov")
+			div.sm-col.sm-col-3.md-col-3						
+				h3 W2 Discrepency
+					video(controls muted class="fit" height: auto   audio="false" src="/images/intu_w2issue.mov")
+			div.sm-col.sm-col-3.md-col-3						
+				h3 Return Accepted
+					video(controls muted class="fit" height: auto audio="false" src="/images/intu_returnaccept.mov")				
+			h2.descript Native Application
+		div.sm-col.sm-col-8.md-col-8
+			iframe(class="block mx-auto invpt" width="438" height="930" frameborder="0" src="//invis.io/PB84DZOU6")
 
-		h3 Sketching Scenarios
-		div.clearfix
-			div.sm-col.sm-col-4.md-col-4
-				h3 Meeting a New Client
-				img(class="fit" src="/images/intu_meetnewclient.png")
-			div.sm-col.sm-col-4.md-col-4
-				h3 Completed Return Notification
-				img(class="fit" src="/images/intu_completereturn.png")
-			div.sm-col.sm-col-4.md-col-4
-				h3 Growing Client Base
-				img(class="fit" src="/images/intu_growclientbase.png")
-
-		h3 Bot Design vs Native Application Flow
-		div.clearfix
-				div.sm-col.sm-col-6.md-col-6
-					img(class="fit" src="/images/intu_botdesign.png")
-				div.sm-col.sm-col-6.md-col-6
-					img(class="fit" src="/images/intu_flow.png")
-	#deliver
-		h2.descript DELIVER
-		hr
-		br
-		h2.descript ChatBot
-	div.clearfix.sm-col.sm-col-12.md-col-12
-		div.sm-col.sm-col-3.md-col-3
-			h3 Add Client
-				video(controls muted class="fit" height: auto   audio="false" src="/images/intu_addclient.mov")
-		div.sm-col.sm-col-3.md-col-3						
-			h3 Grow Client Base
-				video(controls muted class="fit" height: auto   audio="false" src="/images/intu_growclientbase.mov")
-		div.sm-col.sm-col-3.md-col-3						
-			h3 W2 Discrepency
-				video(controls muted class="fit" height: auto   audio="false" src="/images/intu_w2issue.mov")
-		div.sm-col.sm-col-3.md-col-3						
-			h3 Return Accepted
-				video(controls muted class="fit" height: auto audio="false" src="/images/intu_returnaccept.mov")				
-		h2.descript Native Application
-	div.sm-col.sm-col-8.md-col-8
-		iframe(class="block mx-auto invpt" width="438" height="930" frameborder="0" src="//invis.io/PB84DZOU6")
-
-
-		div.quickjump
-			a(href="#discover")
-				h3 Discover 
-			a(href="#define")
-				h3 Define  
-			a(href="#design")
-				h3 Design  
-			a(href="#deliver")
-				h3 Deliver
 
 
 

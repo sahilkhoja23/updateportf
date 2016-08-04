@@ -1,4 +1,4 @@
-include layout.jade
+link(rel='stylesheet', href='/stylesheets/style.css')
 script.
 	function passWord() {
 	var testV = 1;
@@ -22,54 +22,53 @@ script.
 
 
 
-block header
-	nav.clearfix
-		.sm-col
-			a.btn.py2(href='/')
-				h3 home
-		.sm-col-right
-			a.btn.py2(href="resume.pdf")
-				h3 resume
+
 
 block content
-	h1 Work
-
 	br
 
 	div.clearfix.mx-auto
-		div.sm-col.sm-col-6.md-col-4
+		div.sm-col.sm-col-6.md-col-6
 			a(onclick="passWord()")
 				img(class="fit mx-auto" src="/images/intuit.png")
 		div.sm-col.sm-col-6.md-col-6.overflow-scroll.px3
 			h2.descript Intuit 
-			h3.descript 
+			p(style="opacity: 0.5; font-size: 12pt") 
 				|Experience Design Intern 2016 - Discovered mobile use cases for accountants using Intuit Tax Online. Presented findings to the VP of Intuit ProConnect and Senior Leadership Team. To see this work, please 
 				a(href="mailto:sk938@cornell.edu") contact
 				|  me directly.
 	br
 	a(href="uber" style="text-decoration:none")
 		div.clearfix.mx-auto
-			div.sm-col.sm-col-6.md-col-4
+			div.sm-col.sm-col-6.md-col-6
 				img(class="fit" src="/images/uber.png")
 			div.sm-col.sm-col-6.md-col-6.overflow-scroll.px3
 				h2.descript Uber
-				h3.descript Took 24 Ubers throughout East Asia to speak with driver’s about their usability issues in an international environment. Received attention from Head of International UX Research, Southeast Asia Design Team, and Lead Experience Designers at Uber.
+				p(style="opacity: 0.5; font-size: 12pt") Took 24 Ubers throughout East Asia to speak with driver’s about their usability issues in an international environment. Received attention from Head of International UX Research, Southeast Asia Design Team, and Lead Experience Designers at Uber.
 
 	br
 	a(href="function" style="text-decoration:none")
 		div.clearfix.mx-auto		
-			div.sm-col.sm-col-6.md-col-4
+			div.sm-col.sm-col-6.md-col-6
 				img(class="fit" src="/images/function.jpg")
 			div.sm-col.sm-col-6.md-col-6.overflow-scroll.px3
 				h2.descript Function of Beauty
-				h3.descript Designed a digital hairlab to clarify product offerings to this Y-Combinator backed startup. Work was displayed at YC W16 Demo Day.
+				p(style="opacity: 0.5; font-size: 12pt") Designed a digital hairlab to clarify product offerings to this Y-Combinator backed startup. Work was displayed at YC W16 Demo Day.
 
 	br
 	a(href="dangle" style="text-decoration:none")
 		div.clearfix.mx-auto
-		div.sm-col.sm-col-6.md-col-4
+		div.sm-col.sm-col-6.md-col-6
 			img(class="fit" src="/images/dangle.png")
 		div.sm-col.sm-col-6.md-col-6.overflow-scroll.px3
 			h2.descript Dangle
-			h3.descript Wireframed and prototyped iOS Application using tools such as Framer.js and Invision. Developed sign-up campaign in order to begin a beta testing round. Work was shipped on the v1 of the product, now available on the app store.
+			p(style="opacity: 0.5; font-size: 12pt") Wireframed and prototyped iOS Application using tools such as Framer.js and Invision. Developed sign-up campaign in order to begin a beta testing round. Work was shipped on the v1 of the product, now available on the app store.
+	br
+	a(href="dribbble" style="text-decoration:none")
+		div.clearfix.mx-auto
+		div.sm-col.sm-col-6.md-col-6
+			img(class="fit" src="/images/pen.jpg")
+		div.sm-col.sm-col-6.md-col-6.overflow-scroll.px3
+			h2.descript Visual Design
+			p(style="opacity: 0.5; font-size: 12pt") Visual Design Work & Explorations
 

@@ -16,15 +16,16 @@ block header
 				i.fa.fa-linkedin(aria-hidden='true')
 		div.actionList.clearfix
 			div.one
-				a(href="work")
+				a(style="text-decoration: none" href="work")
 					h3 work
 			div.two
-				a(href="about")
-					h3 about
+				a(style="text-decoration: none" href="about")
+					h3(style="opacity: 0.5") about
 			div.three
-				a(href="resume.pdf")
-					h3 resume
-block content 
-	include dribbble.jade
+				a(style="text-decoration: none" href="resume.pdf")
+					h3(style="opacity: 0.5") resume
+block content
+	#work
+		include work.jade
 	
 
