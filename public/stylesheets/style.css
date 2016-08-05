@@ -11,7 +11,12 @@ body {
     font-family: 'pn-light';
     src: url(/stylesheets/ProximaNova-Light.ttf);
 }
-
+hr {
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray
+}
 
 
 @media (max-width: 768px) {
@@ -34,7 +39,7 @@ h1 {
 	font-family: 'Andale Mono';
 	color: #003366;
 	text-transform: uppercase;
-} 
+}
 
 h2 {
 	font-family: 'Andale Mono';
@@ -138,4 +143,3 @@ p {
 	line-height: 150%;
 	font-size: 12pt;
 }
-
