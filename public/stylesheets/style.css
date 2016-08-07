@@ -17,6 +17,9 @@ hr {
   color:gray;
   background-color:gray
 }
+br {
+  line-height: 0;
+}
 
 
 @media (max-width: 768px) {
