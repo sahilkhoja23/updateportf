@@ -11,6 +11,14 @@ body {
     font-family: 'pn-light';
     src: url(/stylesheets/ProximaNova-Light.ttf);
 }
+@font-face {
+  font-family: 'PT Serif';
+  src: url(/stylesheets/PTSerif-Regular.woff2);
+}
+@font-face {
+  font-family: 'Adelle Sans';
+  src: url(/stylesheets/AdelleSans-Light.ttf);
+}
 hr {
   height:2px;
   border-width:0;
@@ -39,18 +47,17 @@ body {padding: 0px;}
 
 
 h1 {
-	font-family: 'Andale Mono';
+	font-family: 'PT Serif';
 	color: #003366;
-	text-transform: uppercase;
 }
 
 h2 {
-	font-family: 'Andale Mono';
+	font-family: 'Adelle Sans';
 	opacity: 0.5;
 }
 
 h3 {
-	font-family: 'Andale Mono'
+	font-family: 'Adelle Sans'
 }
 
 p, li p, li {
@@ -134,7 +141,7 @@ a:hover {color: #003366;}
 }
 
 .descript {
-	font-family: 'Andale Mono';
+	font-family: 'Adelle Sans';
 	opacity: 1;
 	line-height: 150%;
 }
